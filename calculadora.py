@@ -4,44 +4,40 @@ solicitar el ingreso de un número y mostrar un menu de operaciones disponibles 
 import math
 import os
 
-numero = int(input("Ingrese un Numero :" ))
-  
-if  numero != 0:
-    os.system('cls')   # limpia la pantalla
-    print("Numero elegido es ==> ",numero)
-    coseno = math.cos(numero)
-    seno = math.sin(numero)
-    tangente = math.tan(numero)
-    cuadrado = numero*numero
-    raiz = math.sqrt(numero)
+while True:
+     os.system('cls')   # limpia la pantalla
+       
+     numero = int(input("Ingrese un Numero :" ))
+     if numero != 0 :
+        
+            coseno = math.cos(numero)
+            seno = math.sin(numero)
+            tangente = math.tan(numero)
+            cuadrado = numero*numero
+            raiz = math.sqrt(numero)
 
-    operacion = input("ingrese operacion a realizar \n\t1 - seno\n\t2 - coseno\n\t3 - tangente\n\t4 - cuadrado\n\t5 - raiz cuadrada \n\tLa opcion es ==> ")
-   
-    if operacion == "1":
-        print("seno = " ,seno)
-    elif operacion == "2":
-        print("coseno = ", coseno)
-    elif operacion == "3":
-        print("tangente = ", tangente)
-    elif operacion == "4":
-        print("cuadrado = ", cuadrado)
-    elif operacion == "5":
-        print("raiz = ", raiz)
-    else:
-        print("ERROR opcion no contemplada")
-else:
-    print("FIN")
-    exit()
+            operacion = input("ingrese operacion a realizar \n\t1 - seno\n\t2 - coseno\n\t3 - tangente\n\t4 - cuadrado\n\t5 - raiz cuadrada \n\tLa opcion es ==> ")
+        
+            if operacion == "1":
+                print("seno = " ,seno)
+                input("pulsa enter para continuar")
+            elif operacion == "2":
+                print("coseno = ", coseno)
+                input("pulsa enter para continuar")
+            elif operacion == "3":
+                print("tangente = ", tangente)
+                input("pulsa enter para continuar")
+            elif operacion == "4":
+                print("cuadrado = ", cuadrado)
+                input("pulsa enter para continuar")
+            elif operacion == "5":
+                print("raiz = ", raiz)
+                input("pulsa enter para continuar")
+            else:
+                print("ERROR opcion no contemplada")
+                input("pulsa enter para continuar")
+     else:
+            print("FIN")
+            exit()
 
 #os.system('cls') # NOTA para windows tienes que cambiar clear por cls
-'''
-print(" coseno = ",coseno ,"\n","seno = ",seno,"\n","tangente = ",tangente,"\n","cuadrado = ",cuadrado,"\n","raiz cuadrada = ",raiz)
-
-
-dato = []
-cantidad = 2
-
-for i in range(cantidad):
-  dato.append(float(input("Dígame su peso en kg: ")))
-print(dato)
-'''
