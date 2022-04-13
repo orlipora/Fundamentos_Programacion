@@ -1,12 +1,17 @@
+from math import fabs
+
 
 print("CONTRASEÑA :")
 print("Debe tener al menos un número.\nDebe tener al menos un carácter en mayúscula y uno en minúscula.\nDebe tener al menos un símbolo especial.\nDebe tener  minimo 8 caracteres y no contener espacios.")
+
+
+
 
 largo = False
 espacio = False #.isspace()
 minuscula = False # .islower()
 numero = False #.isdigit()
-alfanum = True # .isalnum()
+alfanum = False # .isalnum()
 mayuscula = False # .isupper()
 
 password = input("Ingrese la Contraseña ==>  ")
@@ -24,8 +29,8 @@ for i in range(2):
             minuscula = True         #si
         if carat.isdigit()==True:    
             numero = True            #si
-        if carat.isalnum()==False:
-            alfanum = False           #no
+        if carat.isalnum()==True:
+            alfanum = True           #no
         
     if  espacio == True or largo == True:  # no  si
            print()
@@ -33,7 +38,7 @@ for i in range(2):
            print(" le quedan =>",3-(i+1)," intentos")
            password = input("Ingresela Nuevamente  :")
            print()
-    elif mayuscula == True and minuscula == True and numero == True and alfanum == False:
+    if mayuscula == True and minuscula == True and numero == True and alfanum == True:
            
            print("Contraseña Correcta")
            break
@@ -46,11 +51,7 @@ for i in range(2):
            print()
 
     
+    print("Contraseña Incorrecta")
+    break
 
-print("Contraseña Incorrecta")
-   
-'''
-El método str. isalnum() devuelve True si los caracteres son alfanuméricos, lo que significa que no hay caracteres especiales en la cadena. Si hay caracteres especiales en la cadena, devolverá False 
-'''
     
-

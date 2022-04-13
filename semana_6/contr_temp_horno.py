@@ -18,17 +18,17 @@ while temp_test != 0:
     suma = suma1 /50
     print('Temp_Promedio : ', suma, 'ºC')
     print('tem_test : ', temp_test , 'ºC')
-    print(lis_temp)
+    #print(lis_temp)
     
-    temp_ref =  suma - temp_test  
-    print('Temp de referencia : ', temp_ref , 'ºC')
+   
+   
 
-    if temp_ref < 200:
+    if temp_test < 200:
         print('Encender 2 Quemadores')
 
-    elif  temp_ref >= 200 and  temp_ref <300:
+    elif temp_test >= 200 and temp_test <300:
         print('Encender 1 Quemadores')
-    elif  temp_ref >= 300  and temp_ref < 320 :
+    elif temp_test >= 300  and temp_test <= 320 :
         print('Temperatura Correcta')
     else:
         print('Fuera de rango')
