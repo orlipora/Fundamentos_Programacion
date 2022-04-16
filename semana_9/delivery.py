@@ -42,7 +42,9 @@ print()
 
 print(f'ENTREGA SEMANAL ==> {tot_entr} ---INGRESO TOTAL ==> $ {tot_cobr}')
 print()
-
+if __name__ == '__main__':
+     cobr_viernes()
+   
 
 
 
