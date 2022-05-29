@@ -1,0 +1,4 @@
+https://newsapi.org/
+http://pad19.com:3030/sensor33
+unix time
+datetime en python
