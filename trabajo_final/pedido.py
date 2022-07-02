@@ -72,4 +72,5 @@ if __name__ == '__main__':
         print("Error al conectar con el servidor ")
     else:
         print(proceso["mensaje"])
+        print('Se guardo con Nº: ')
    
